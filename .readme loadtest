@@ -1,6 +1,0 @@
-What to Monitor**:
-- **Failure Rate** > 1% → Application bugs
-- **Response Time** > 5s → Database/CPU bottleneck
-- **Error Types**:
-  - `HTTP 500` → Code exceptions
-  - `HTTP 502/503` → Azure infrastructure issues
