@@ -1,0 +1,10 @@
+Correlate your test results with these Azure CLI commands:
+# Live metrics during load test
+az monitor metrics list --resource <app-service-id> \
+  --metrics "Requests,Http5xx,CpuPercentage,MemoryPercentage" \
+  --interval PT1M
+
+# Query application logs
+az webapp log config --name <app-name> --resource-group <group> \
+  --application-logging true --level Verbose
+az webapp log tail --name <app-name> --resource-group <group>
